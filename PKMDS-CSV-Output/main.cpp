@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
 			ostringstream o;
 			std::wstring wstr;
 			o << "Name,Nickname,HPIV,AtkIV,DefIV,SpAtkIV,SpDefIV,SpdIV,HPEV,AtkEV,DefEV,SpAtkEV,SpDefEV,SpdEV,BoxName,BoxNumber,Slot,OTName,TID,SID\n";
-			for (int pslot = 0; pslot < sav->cur.party.size; pslot++)
+			for (int pslot = 0; pslot < int(sav->cur.party.size); pslot++)
 			{
 				pkm = &(sav->cur.party.pokemon[pslot]);
 				decryptpkm(pkm);
