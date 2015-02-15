@@ -1,0 +1,6 @@
+[submodule "externals/PKMDS"]
+	path = externals/PKMDS
+	url = git@github.com:codemonkey85/PKMDS
+[submodule "externals/PKMDS-DB"]
+	path = externals/PKMDS-DB
+	url = git@github.com:codemonkey85/PKMDS-DB

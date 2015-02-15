@@ -43,7 +43,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -64,6 +64,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\externals\PKMDS\include\pkmds\pkmds_g5.h" />
+    <ClInclude Include="..\externals\PKMDS\include\pkmds\pkmds_g5_sqlite.h" />
+    <ClInclude Include="..\externals\PKMDS\include\pkmds\pkmds_g6.h" />
+    <ClInclude Include="..\externals\PKMDS\include\pkmds\pkmds_gba.h" />
+    <ClInclude Include="..\externals\PKMDS\include\pkmds\pkmds_sql.h" />
+    <ClInclude Include="..\externals\PKMDS\include\pkmds\pkmds_vector.h" />
+    <ClInclude Include="..\externals\PKMDS\include\pkmds\pkm_report.h" />
+    <ClInclude Include="..\externals\PKMDS\include\pkmds\pokeprng.h" />
+    <ClInclude Include="..\externals\PKMDS\include\pkmds\stdafx.h" />
+    <ClInclude Include="..\externals\PKMDS\include\pkmds\wondercard.h" />
+    <ClInclude Include="..\externals\PKMDS\include\sqlite3.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\externals\PKMDS\lib\pkmds_g5.cpp" />
+    <ClCompile Include="..\externals\PKMDS\lib\pkmds_g5_sqlite.cpp" />
+    <ClCompile Include="..\externals\PKMDS\lib\pkmds_g6.cpp" />
+    <ClCompile Include="..\externals\PKMDS\lib\pkmds_gba.cpp" />
+    <ClCompile Include="..\externals\PKMDS\lib\pkmds_sql.cpp" />
+    <ClCompile Include="..\externals\PKMDS\lib\pkmds_vector.cpp" />
+    <ClCompile Include="..\externals\PKMDS\lib\pkm_report.cpp" />
+    <ClCompile Include="..\externals\PKMDS\lib\sqlite3.c" />
+    <ClCompile Include="..\externals\PKMDS\lib\stdafx.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\externals\PKMDS-DB\veekun-pokedex.sqlite">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
