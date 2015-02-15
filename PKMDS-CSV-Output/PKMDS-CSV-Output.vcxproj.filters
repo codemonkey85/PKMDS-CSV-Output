@@ -84,7 +84,4 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="..\externals\PKMDS-DB\veekun-pokedex.sqlite" />
-  </ItemGroup>
 </Project>
